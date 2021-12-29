@@ -1,0 +1,28 @@
+.LandingPage {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.landing-content {
+  width: 500px;
+  height: 587px;
+  margin-right: 50px;
+}
+.landing-content p {
+  font-weight: 700;
+  font-size: 47.7488px;
+  line-height: 58px;
+  margin-bottom: 35px;
+  font-style: normal;
+  font-family: 'Gilroy', sans-serif;
+}
+.main-content {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 188.8%;
+  text-align: justify;
+  font-style: normal;
+  font-family: 'Poppins', sans-serif;
+}
