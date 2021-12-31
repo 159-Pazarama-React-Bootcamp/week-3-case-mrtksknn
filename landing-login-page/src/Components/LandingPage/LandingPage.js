@@ -19,9 +19,13 @@ const LandingPage = () => {
         <br />
         <div className="main-content">I wish you luck,</div>
         <div className="main-content">Mert ❤️</div>
+        <div>
+          <img src="./assets/Vector.jpg" className="arrow" alt="arrow" />
+        </div>
+        <button>Buy me a Coffee</button>
       </div>
       <div className="landing-hero">
-        <img src="./assets/hero.jpg" />
+        <img src="./assets/hero.jpg" alt="hero" />
       </div>
     </div>
   )
