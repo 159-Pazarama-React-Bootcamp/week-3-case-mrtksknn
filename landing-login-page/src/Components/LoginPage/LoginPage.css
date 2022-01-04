@@ -38,12 +38,15 @@
   width: 70px;
   height: 70px;
 }
-.container .avatar {
-  position: absolute;
-  z-index: 1;
+p {
+  font-family: 'Gilroy', sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  color: #465685;
 }
-.container .avatar img {
-  width: 940px;
-  height: 850px;
-  border-radius: 40px;
+p:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }

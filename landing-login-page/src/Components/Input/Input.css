@@ -18,7 +18,7 @@ label {
   align-items: center;
   color: #414042;
 }
-input {
+.input-field {
   width: 400px;
   height: 50px;
   background: #ffffff;
@@ -33,11 +33,10 @@ input::placeholder {
 }
 input:focus {
   outline: none;
-  border: none;
 }
 .icon {
   position: absolute;
-  top: 35px;
+  top: 40px;
   right: 17px;
   cursor: pointer;
 }

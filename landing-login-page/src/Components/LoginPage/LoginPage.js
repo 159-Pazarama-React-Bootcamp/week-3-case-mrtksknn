@@ -28,6 +28,7 @@ const LoginPage = () => {
             value={form.password}
             onChange={handleChange}
           />
+          <p>Forgot Password?</p>
         </div>
       </div>
     </div>

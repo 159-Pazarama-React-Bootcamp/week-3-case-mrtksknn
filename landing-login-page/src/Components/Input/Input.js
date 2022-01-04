@@ -17,12 +17,18 @@ const Input = ({ type, name, value, placeholder }) => {
   return (
     <div className="input">
       <label>{name}</label>
-      <input type={inputType} placeholder={placeholder} />
-      {type === 'password' && (
-        <i className="icon" onClick={handleShowPasswordIconClick}>
-          <EyeIcon />
-        </i>
-      )}
+      <div class="input-icons">
+        <input
+          type={inputType}
+          placeholder={placeholder}
+          className="input-field"
+        />
+        {type === 'password' && (
+          <i className="icon" onClick={handleShowPasswordIconClick}>
+            <EyeIcon />
+          </i>
+        )}
+      </div>
     </div>
   )
 }
