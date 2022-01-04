@@ -1,0 +1,49 @@
+.Login {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg, #00b4db 0%, #0083b0 100%);
+}
+.container {
+  width: 1427px;
+  height: 850px;
+  display: flex;
+  align-items: center;
+  border-radius: 40px;
+  background: #fff;
+  padding: 25px;
+  background-image: url('https://s3-alpha-sig.figma.com/img/e311/f707/a0475bfdfe15cb105f34d64a79e2e2a5?Expires=1642377600&Signature=BYCsYsXTLY8jCLe8fjz4HS5JjlG3zYpkkxA95m19NkmdK~En76ztZWNcABmVwOQMwX64TTkzuM4yYsIgh1YCoZfUq-bXdc9P8TpmTpriXqbFcBpo0LZeRUPoH5FTk9~91-Yqq8RStTsmFDUO4BnO~LpMte5jprQ4RpLSTCbLdcYnwu470W3BuVevywB3KVdBt9SmPH8QHLC9lHhnNnFdU6VbYLrslktBbZDQz~3Br4P-qBisVsDQP-s6~39xhHp1aVib03ydmlzZrRaiN-aB0az5SROmnFu476gjOXv7zoOuTy6SdxRkn18URfjK2Srfh~TyEWNQk3FiShZim91tjQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA');
+  background-repeat: no-repeat;
+  background-size: 1427px 850px;
+}
+.container .form {
+  width: 401px;
+  height: 595px;
+  display: flex;
+  z-index: 33;
+  margin-left: 128px;
+  flex-direction: column;
+}
+.form .header {
+  font-family: 'Gilroy', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;
+  margin-top: 13px;
+  color: #414042;
+}
+.form img {
+  width: 70px;
+  height: 70px;
+}
+.container .avatar {
+  position: absolute;
+  z-index: 1;
+}
+.container .avatar img {
+  width: 940px;
+  height: 850px;
+  border-radius: 40px;
+}

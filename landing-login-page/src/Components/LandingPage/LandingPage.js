@@ -1,5 +1,6 @@
 import React from 'react'
 import './LandingPage.css'
+import { Link } from 'react-router-dom'
 
 const LandingPage = () => {
   return (
@@ -22,7 +23,9 @@ const LandingPage = () => {
         <div>
           <img src="./assets/Vector.jpg" className="arrow" alt="arrow" />
         </div>
-        <button>Buy me a Coffee</button>
+        <Link to="/login">
+          <button>Buy me a Coffee</button>
+        </Link>
       </div>
       <div className="landing-hero">
         <img src="./assets/hero.jpg" alt="hero" />
