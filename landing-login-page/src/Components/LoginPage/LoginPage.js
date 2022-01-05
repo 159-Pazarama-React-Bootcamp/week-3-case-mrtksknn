@@ -12,23 +12,49 @@ const LoginPage = () => {
     <div className="Login">
       <div className="container">
         <div className="form">
-          <img src="./assets/logo.png" alt="logo" />
-          <p className="header">Login</p>
-          <Input
-            type="email"
-            placeholder="username@gmail.com"
-            name="Email"
-            value={form.userName}
-            onChange={handleChange}
-          />
-          <Input
-            type="password"
-            placeholder="Password"
-            name="Password"
-            value={form.password}
-            onChange={handleChange}
-          />
-          <p>Forgot Password?</p>
+          <div className="form-input">
+            <img src="./assets/logo.png" alt="logo" />
+            <p className="header">Login</p>
+            <Input
+              type="email"
+              placeholder="username@gmail.com"
+              name="Email"
+              value={form.userName}
+              onChange={handleChange}
+            />
+            <Input
+              type="password"
+              placeholder="Password"
+              name="Password"
+              value={form.password}
+              onChange={handleChange}
+            />
+            <p style={{ marginTop: '-15px' }} className="forgot">
+              Forgot Password?
+            </p>
+            <button className="sign">Sign in</button>
+            <p className="link-menu">or continue with</p>
+            <div className="link-button">
+              <button>
+                <img src="./assets/bi-google.png" />
+              </button>
+              <button>
+                <img src="./assets/bi-github.png" />
+              </button>
+              <button>
+                <img src="./assets/bi_facebook.jpg" />
+              </button>
+            </div>
+            <p className="account">
+              Don't yet an account yet?
+              <span>
+                <a href="#">Register for free</a>
+              </span>
+            </p>
+          </div>
+        </div>
+        <div className="avatar">
+          <img src="./assets/my-avatar.jpg" />
         </div>
       </div>
     </div>
