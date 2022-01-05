@@ -1,9 +1,8 @@
 import React, { useState } from 'react'
-import './LoginPage.css'
 import { Link } from 'react-router-dom'
 import Input from '../Input/Input'
 
-const LoginPage = () => {
+const Register = () => {
   const [form, setForm] = useState({ userName: '', password: '' })
 
   const handleChange = (event) => {
@@ -15,7 +14,7 @@ const LoginPage = () => {
         <div className="form">
           <div className="form-input">
             <img src="./assets/logo.png" alt="logo" />
-            <p className="header">Login</p>
+            <p className="header">Register</p>
             <Input
               type="email"
               placeholder="username@gmail.com"
@@ -30,10 +29,14 @@ const LoginPage = () => {
               value={form.password}
               onChange={handleChange}
             />
-            <p style={{ marginTop: '-15px' }} className="forgot">
-              Forgot Password?
-            </p>
-            <button className="sign">Sign in</button>
+            <button className="sign" style={{ marginTop: '0' }}>
+              <a
+                href="https://mertkeskin-portfolio.vercel.app/"
+                style={{ textDecoration: 'none', color: '#fff' }}
+              >
+                Register
+              </a>
+            </button>
             <p className="link-menu">or continue with</p>
             <div className="link-button">
               <button>
@@ -46,14 +49,6 @@ const LoginPage = () => {
                 <img src="./assets/bi_facebook.jpg" />
               </button>
             </div>
-            <p className="account">
-              Don't yet an account yet?
-              <span>
-                <Link to="/register">
-                  <a href="#">Register for free</a>
-                </Link>
-              </span>
-            </p>
           </div>
         </div>
         <div className="avatar">
@@ -64,4 +59,4 @@ const LoginPage = () => {
   )
 }
 
-export default LoginPage
+export default Register
