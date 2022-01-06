@@ -29,14 +29,11 @@ const Register = () => {
               value={form.password}
               onChange={handleChange}
             />
-            <button className="sign" style={{ marginTop: '0' }}>
-              <a
-                href="https://mertkeskin-portfolio.vercel.app/"
-                style={{ textDecoration: 'none', color: '#fff' }}
-              >
+            <Link to="/login" style={{ textDecoration: 'none' }}>
+              <button className="sign" style={{ marginTop: '0' }}>
                 Register
-              </a>
-            </button>
+              </button>
+            </Link>
             <p className="link-menu">or continue with</p>
             <div className="link-button">
               <button>

@@ -4,7 +4,8 @@ import EyeIcon from '../EyeIcon/EyeIcon'
 
 import './Input.css'
 
-const Input = ({ type, name, value, placeholder }) => {
+const Input = (props) => {
+  const { type, placeholder, ...args } = props
   const [inputType, setInputType] = useState(type)
 
   const handleShowPasswordIconClick = () => {
@@ -16,12 +17,13 @@ const Input = ({ type, name, value, placeholder }) => {
   }
   return (
     <div className="input">
-      <label>{name}</label>
+      <label>{type}</label>
       <div class="input-icons">
         <input
           type={inputType}
           placeholder={placeholder}
           className="input-field"
+          {...args}
         />
         {type === 'password' && (
           <i className="icon" onClick={handleShowPasswordIconClick}>

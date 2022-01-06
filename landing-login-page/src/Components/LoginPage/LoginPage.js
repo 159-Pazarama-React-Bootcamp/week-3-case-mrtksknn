@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import Input from '../Input/Input'
 
 const LoginPage = () => {
-  const [form, setForm] = useState({ userName: '', password: '' })
+  const [form, setForm] = useState({ email: '', password: '' })
 
   const handleChange = (event) => {
     setForm({ ...form, [event.target.name]: event.target.value })
@@ -17,16 +17,14 @@ const LoginPage = () => {
             <img src="./assets/logo.png" alt="logo" />
             <p className="header">Login</p>
             <Input
-              type="email"
-              placeholder="username@gmail.com"
-              name="Email"
-              value={form.userName}
+              type={'text'}
+              name="email"
+              value={form.email}
               onChange={handleChange}
             />
             <Input
-              type="password"
-              placeholder="Password"
-              name="Password"
+              type={'password'}
+              name="password"
               value={form.password}
               onChange={handleChange}
             />
